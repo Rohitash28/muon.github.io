@@ -13,6 +13,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: Averta, sans-serif;
+  color: white;
 }
 
 .muon-bg {
@@ -34,19 +35,20 @@ body {
   margin: 0;
   font-style: normal;
   font-weight: bold;
-  font-size: 55px;
+  font-size: 48px;
   line-height: 120%;
   text-align: center;
+  margin-bottom: 22px;
 }
 
-.muon-banner h1{
-    background: -webkit-linear-gradient(360deg, #36d1dc 0%, #5b86e5 99.77%);
+.muon-banner h1 {
+  background: -webkit-linear-gradient(360deg, #36d1dc 0%, #5b86e5 99.77%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .muon-banner h2 {
-    text-align: center;
+  text-align: center;
   font-weight: normal !important;
 }
 
@@ -75,8 +77,8 @@ body {
   color: #ffffff;
 }
 
-.muon-nav-list li{
-    cursor: pointer;
+.muon-nav-list li {
+  cursor: pointer;
 }
 
 .muon-nav-list li:nth-child(2) {
@@ -84,17 +86,9 @@ body {
 }
 
 .nav-title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
-  /* color: white; */
   text-align: center;
   margin-bottom: 16px;
   margin-top: 42px;
-  background: -webkit-linear-gradient(360deg, #36d1dc 20%, #5b86e5 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .muon-sub-btn {
@@ -125,94 +119,102 @@ body {
   border: 1px solid rgba(17, 17, 17, 0.32);
 }
 
-
-.muon-sub-input::placeholder{
-    color: rgba(17, 17, 17, 0.32);
+.muon-sub-input::placeholder {
+  color: rgba(17, 17, 17, 0.32);
 }
-.muon-sub-input:focus, .muon-sub-btn:focus{
-    outline: none;
-}
-
-.muon-sub-form{
-    width: 100;
-    display: grid;
-    grid-template-columns: minmax(400px, 472px) minmax(200px, 210px);
-    /* align-items: center; */
-    justify-content: center;
-    column-gap: 16px;
-    margin: 0 auto;
+.muon-sub-input:focus,
+.muon-sub-btn:focus {
+  outline: none;
 }
 
-
-@media (max-width:767px) {
-    .muon-banner{
-        margin-top: 15%;
-    }
+.muon-sub-form {
+  width: 100;
+  display: grid;
+  grid-template-columns: minmax(400px, 472px) minmax(200px, 210px);
+  /* align-items: center; */
+  justify-content: center;
+  column-gap: 16px;
+  margin: 0 auto;
 }
 
+.muon-quote-author {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 120%;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 767px) {
+  .muon-banner {
+    margin-top: 15%;
+  }
+}
 
 @media (max-width: 733px) {
-    .muon-banner h1, .muon-banner h2 {
-        font-size: 45px;
-        text-align: center;
-    }
+  .muon-banner h1,
+  .muon-banner h2 {
+    font-size: 45px;
+    text-align: center;
+  }
 }
 
-@media(max-width: 679px){
-    .muon-sub-form{
-        grid-template-columns: 1fr;
-        width: 100%;
-        row-gap: 24px;
-    }
+@media (max-width: 679px) {
+  .muon-sub-form {
+    grid-template-columns: 1fr;
+    width: 100%;
+    row-gap: 24px;
+  }
 
-    .muon-sub-btn{
-        width: 210px;
-        margin: 0 auto;
-    }
+  .muon-sub-btn {
+    width: 210px;
+    margin: 0 auto;
+  }
 
-    .muon-sub-input{
-        padding: 12px;
-    }
+  .muon-sub-input {
+    padding: 12px;
+  }
 }
 
+@media (max-width: 611px) {
+  .muon-banner h1 {
+    font-size: 24px;
+    text-align: center !important;
+    margin-bottom: 15px;
+  }
 
-@media(max-width: 611px){
-    .muon-banner h1, .muon-banner h2 {
-        font-size: 36px;
-        text-align: center !important;
-        /* display: inline; */
-    }
-
-    .moun-title-wrap{
-        text-align: center;
-    }
+  .muon-quote-author{
+    font-size: 14px;
+  }
 }
 
+@media (max-width: 425px) {
+  .muon-banner p {
+    font-size: 14px;
+    line-height: 120%;
+    margin: 16px 0 32px 0;
+  }
 
-@media(max-width: 425px){
-    .muon-banner p {
-        font-size: 14px;
-        line-height: 120%;
-        margin: 16px 0 32px 0;
-      }
+  .muon-sub-input {
+    padding: 6px;
+  }
 
-      .muon-sub-input{
-        padding: 6px;
-    }
+  .muon-sub-btn {
+    font-size: 16px;
+  }
 
-    .muon-sub-btn{
-        font-size: 16px;
-    }
+  .muon-nav-list {
+    font-size: 12px;
+  }
 
-    .muon-nav-list{
-        font-size: 12px;
-    }
+  .muon-sub-input {
+    font-size: 12px;
+  }
 
-    .muon-sub-input{
-        font-size: 12px;
-    }
-
-    .muon-bg {
-        background-image: url("./image/muonSmBg.png");
-      }
+  .muon-bg {
+    background-image: url("./image/muonSmBg.png");
+  }
 }
